@@ -1,0 +1,108 @@
+@import '../../styles/variables';
+
+.filtersContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.leftFilters, .rightFilters {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+}
+
+.leftFilters {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.rightFilters {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.select {
+  min-width: 120px;
+  padding: $spacing-sm $spacing-md;
+  border: 1px solid $gray-3;
+  border-radius: $border-radius;
+  font-size: 14px;
+  color: $secondary-blue;
+  background-color: $white;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-blue;
+  }
+
+  option {
+    color: $secondary-blue;
+    background-color: $white;
+  }
+}
+
+.dateRangeWrapper {
+  display: flex;
+  gap: $spacing-md;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.customDatePicker {
+  display: flex;
+  gap: $spacing-sm;
+  margin-top: 0;
+  width: 100%;
+
+  span {
+    padding: $spacing-sm 0;
+  }
+
+  input {
+    min-width: 120px;
+    max-width: 160px;
+    padding: $spacing-sm $spacing-md;
+    border: 1px solid $gray-3;
+    border-radius: $border-radius;
+    font-size: 14px;
+    color: $secondary-blue;
+    background-color: $white;
+    
+    &::placeholder {
+      color: $gray-1;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $primary-blue;
+    }
+  }
+}
+
+.resetButton {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xs;
+  padding: $spacing-sm $spacing-md;
+  border: 1px solid $gray-3;
+  border-radius: $border-radius;
+  background-color: $white;
+  color: $gray-2;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $error-red;
+    color: $error-red;
+  }
+
+  svg {
+    stroke: currentColor;
+  }
+}

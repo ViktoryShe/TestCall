@@ -1,0 +1,26 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&display=swap');
+
+body {
+  font-family: $font-family;
+  background-color: $background;
+  margin: 0;
+  padding: 0;
+  color: $secondary-blue;
+}
+
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: $spacing-lg;
+
+  header {
+    margin-bottom: $spacing-xl;
+    
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      color: $secondary-blue;
+    }
+  }
+}
